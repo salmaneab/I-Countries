@@ -9,10 +9,8 @@ function App() {
   return (
       <BrowserRouter>
       <Header />
-       <Switch>
-        <Route exact path="/" component={Main}> </Route>
-        <Route path="/country/:name" component={Detail}></Route>
-       </Switch>
+        <Route exact path="/" component={Main} />
+        <Route path="/country/:name" component={Detail} />
       </BrowserRouter>
   );
 }
