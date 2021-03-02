@@ -1,0 +1,78 @@
+.header{
+    padding: 30px 0;
+    box-shadow: 0px 10px 20px rgba(0,0,0,.2);
+    background-color: var(--base2BackgroundColor);
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            h2{
+                font-weight: $lrFontWhight;
+                color: var(--baseColor);
+            }
+        }
+        .dark-mode-btn{
+            position: relative;
+            width: 60px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: hsl(207, 26%, 17%);
+            .squere{
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 10;
+                width: 30px;
+                height: 30px;
+                transform: scale(1.1);
+                border-radius: 50%;
+                background-color: #fff;
+                transition: .2s ease-in-out;
+                box-shadow: 10px 10px 20px rgba(0,0,0,.2), -10px -10px 20px rgba(0,0,0,.2);
+                cursor: pointer;
+            }
+            .dark{
+                left: 30px;
+            }
+            #sun{
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 15px;
+                color: #f1bb39;
+            }
+            #moon{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 15px;
+                color: #f1bb39;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .header{
+        .header-container{
+            .logo{
+                h2{
+                    font-size: 18px;
+                }
+            }
+        }
+        .dark-mode-btn{
+            button{
+                i{
+                    font-size: 14px;
+                }
+                span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+html[data-theme=dark]{
+    --baseBackgroundColor: hsl(207, 26%, 17%);
+    --base2BackgroundColor: hsl(209, 23%, 22%);
+    --baseColor: hsl(0, 0%, 100%);
+    --base2Color: hsl(0, 0%, 98%);
+}
+
+html[data-theme=light]{
+    --baseBackgroundColor: hsl(0, 0%, 100%);
+    --base2BackgroundColor: hsl(0, 0%, 98%);
+    --baseColor: hsl(207, 26%, 17%);
+    --base2Color: hsl(209, 23%, 22%);
+}
+
+//Typography
+
+//Font
+$homePageFontSize: 14px;
+$detailPageFontSize: 16px;
+
+$smFontWhight: 300;
+$mdFontWhight: 600;
+$lrFontWhight: 800;
+
+$fontFamily: 'Nunito Sans', sans-serif;
